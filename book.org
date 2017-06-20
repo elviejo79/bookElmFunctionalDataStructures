@@ -1,0 +1,47 @@
+#+TITLE: ELM + Functional Data Structures v 0.18
+#+AUTHOR: Alejandro Garcia Fernandez
+#+EMAIL: agarciafdz AT gmail DOT com
+#+LANGUAGE:  en
+#+OPTIONS:    H:2 num:nil toc:t \n:nil ::t |:t ^:nil -:t f:t *:t tex:t d:(HIDE) tags:not-in-toc
+
+
+* Introduction to Elm
+Let's jump in with some examples at the REPL, (read-eval-print loop). aka ELM terminal.
+
+#+BEGIN_SRC sh :results output
+elm-repl
+#+END_SRC
+
+#+RESULTS:
+: ---- elm-repl 0.18.0 -----------------------------------------------------------
+:  :help for help, :exit to exit, more at <https://github.com/elm-lang/elm-repl>
+: --------------------------------------------------------------------------------
+: >
+
+
+** Basic Values
+#+BEGIN_SRC haskell :results output
+> True
+True : Bool
+
+> False
+False : Bool
+
+> 'a'
+'a' : Char
+
+> "abc"
+"abc" : String
+> 3.0
+3 : Float
+>
+#+END_SRC
+
+Numeric literals without a decimal point are described by the type variable number,
+which describes both Ints and Floats.
+
+#+BEGIN_SRC elm
+
+> 3
+3 : number
+#+END_SRC
